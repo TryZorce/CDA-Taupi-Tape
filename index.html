@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Taupi'Tape</title>
+  </head>
+  <div>
+    <a onclick="ShowLeaderboard"  class="leaderboard_wrapper">
+        <img src="./assets/Leaderboard.png" class="leaderboard_Image"></img>
+        <p>Leaderboard</p>
+    </a>
+  </div>
+  <div class="home_wrapper">
+          <form class="input_wrapper">
+              <input type="text" name="name" id="name">
+              <input type="button" value="Lancer le jeu">
+            </form>
+        <div class="wrapper_oak">
+            <img src="./assets/Bulle_Text.png" class="oak_bubble"></img>
+            <a onclick="StartGame">
+                <p class="oak_speak">Rentre ton nom et appuie sur lancer !</p>
+            </a>
+            <img src="./assets/Oak.png" class="oak"></img>
+          </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
