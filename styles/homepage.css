@@ -35,13 +35,15 @@
 
 .input_wrapper {
     width: 250px;
-    height: 100px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     justify-content: end;
     padding: 10px;
+    background-color: lightgrey;
+    border: 2px solid black;
 }
 
 
@@ -54,12 +56,6 @@
 
 }
 
-#name{
-    position: relative;
-    font-size: 30px;
-    bottom: 15px;
-}
-
 .input_wrapper input {
     width: 200px;
     height: 40px;
@@ -67,12 +63,9 @@
 }
 
 .input_name {
-    font-size: xx-large;
+    font-size: large;
     margin-bottom: 40px;
-}
-
-.input_wrapper :first-child {
-    margin-top: 300px;
+    text-align: center;
 }
 
 .wrapper_oak {
@@ -102,4 +95,17 @@
 
 .oak {
     width: 200px;
+}
+
+.difficulty{
+    text-align: center;
+    font-size: large;
+    margin-bottom: 20px;
+    width: 200px;
+    padding: 4px;
+}
+
+.button_start{
+    text-align: center;
+    font-size: large;
 }
