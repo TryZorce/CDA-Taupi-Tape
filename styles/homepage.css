@@ -1,0 +1,105 @@
+/* HomePage */
+
+.leaderboard_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+.leaderboard_wrapper p {
+    font-size: medium;
+    font-weight: 600;
+}
+
+.leaderboard_Image {
+    width: 100px;
+}
+
+.home_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.input_box {
+    width: min-content;
+    height: min-content;
+    margin-top: 200px;
+    margin-right: 100px;
+}
+
+.input_wrapper {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: end;
+    padding: 10px;
+}
+
+
+.input_image {
+    position: relative;
+    top: 40px;
+    width: 230px;
+    font-size: 80px;
+    z-index: -50;
+
+}
+
+#name{
+    position: relative;
+    font-size: 30px;
+    bottom: 15px;
+}
+
+.input_wrapper input {
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.input_name {
+    font-size: xx-large;
+    margin-bottom: 40px;
+}
+
+.input_wrapper :first-child {
+    margin-top: 300px;
+}
+
+.wrapper_oak {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: min-content;
+    height: min-content;
+}
+
+.oak_bubble {
+    width: 200px;
+    position: relative;
+    top: 130px;
+    right: 90px;
+    z-index: -2;
+}
+
+.oak_speak {
+    position: relative;
+    top: 45px;
+    right: 100px;
+    width: 150px;
+    z-index: 100;
+
+}
+
+.oak {
+    width: 200px;
+}

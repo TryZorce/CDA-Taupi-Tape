@@ -1,3 +1,4 @@
+@import url(homepage.css);
 body {
     background-image: url(../assets/Background_Main.jpg);
     background-repeat: no-repeat;
@@ -5,78 +6,3 @@ body {
     background-size: cover
 }
 
-.leaderboard_wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: min-content;
-    background-color: lightgrey;
-}
-
-.leaderboard_wrapper p {
-    font-size: large;
-font-weight: 600;
-}
-
-.leaderboard_Image {
-    width: 200px;
-}
-
-.home_wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.input_wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: end;
-    margin-bottom: 200px;
-    margin-left: 250px;
-}
-
-
-
-.input_wrapper input {
-    width: 200px;
-    height: 40px;
-    margin-bottom: 20px;
-}
-
-.input_wrapper :first-child {
-margin-top: 300px;
-}
-
-.wrapper_oak {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    width: min-content;
-    height: min-content;
-}
-
-.oak_bubble {
-    width: 200px;
-    transform: scaleX(-1);
-    position: relative;
-    top: 130px;
-    right: 50px;
-    z-index: -2;
-}
-
-.oak_speak {
-    position: relative;
-    top: 20px;
-    right: 60px;
-    width: 150px;
-    z-index: 100;
-
-}
-
-.oak {
-    width: 200px;
-}
