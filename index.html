@@ -1,41 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="fr">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Taupi'Tape</title>
-</head>
-<div>
-    <a onclick="ShowLeaderboard" class="leaderboard_wrapper">
-        <img src="./assets/Leaderboard.png" class="leaderboard_Image"></img>
-        <p>Leaderboard</p>
-    </a>
-</div>
-<div class="home_wrapper">
-    <div class="input_box">
-    <form class="input_wrapper">
-        <p> Nom : </p>
-            <input type="text" name="name" id="name" class="input_name">
-            <p> Difficulté : </p>
-            <select class="difficulty">
+    <link
+      rel="shortcut icon"
+      href="./assets/TaupiqueurIcon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="home" class="container">
+      <div>
+        <a id="leaderboardLink" class="leaderboard_wrapper">
+            <img src="./assets/Leaderboard.png" class="leaderboard_Image" alt="Leaderboard" draggable="false" />
+            <p>Classement</p>
+        </a>
+      </div>
+      <div id="leaderboardPopup" class="leaderboard-popup">
+        <div class="leaderboard-content">
+            <span class="close" id="closeLeaderboard">&times;</span>
+            <h2>Classement</h2>
+            <div class="difficulty-selector">
+                <label for="difficultySelectPopup">Choisir la difficulté :</label>
+                <select id="difficultySelectPopup">
+                    <option value="all">Toutes les difficultés</option>
+                    <option value="Roucool">Roucool (Facile)</option>
+                    <option value="Roucoups">Roucoups (Normal)</option>
+                    <option value="Roucarnage">Roucarnage (Difficile)</option>
+                </select>
+            </div>
+            <div id="leaderboard" class="leaderboard-container">
+                <ul id="leaderboard-list" class="leaderboard-list"></ul>
+            </div>
+        </div>
+    </div>
+      <div class="home_wrapper">
+        <div class="input_box">
+          <form class="input_wrapper">
+            <p>Nom :</p>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="input_name"
+              placeholder="Entrez votre nom"
+            />
+            <p>Difficulté :</p>
+            <select class="difficulty" id="difficulty">
                 <option value="Roucool">Roucool (Facile)</option>
                 <option value="Roucoups">Roucoups (Normal)</option>
                 <option value="Roucarnage">Roucarnage (Difficile)</option>
-            </select>
-            <input type="button" value="Lancer le jeu" class="button_start">
-        </form>
+              </select>
+            <input
+              type="button"
+              value="Commencer"
+              class="button_start"
+              onclick="startGame()"
+            />
+          </form>
+        </div>
+        <div class="wrapper_oak">
+          <img src="./assets/Box.png" class="oak_bubble" alt="Bulle" draggable="false"/>
+          <p class="oak_speak">
+            Entrez votre nom, choisis une difficulté et appuyez sur commencer !
+          </p>
+          <img src="./assets/oak.webp" class="oak" alt="Professeur Chen" draggable="false" />
+        </div>
+      </div>
     </div>
-    <div class="wrapper_oak">
-        <img src="./assets/Box.png" class="oak_bubble"></img>
-        <a onclick="StartGame">
-            <p class="oak_speak">Rentre ton nom et appuie sur lancer !</p>
-        </a>
-        <img src="./assets/oak.webp" class="oak"></img>
+    <div id="game" class="container">
+      <div class="game_wrapper">
+        <div class="hole_wrapper">
+          <div class="hole">
+            <img src="./assets/Hole.png" class="hole_image" alt="Trou" draggable="false"/>
+          </div>
+          <div class="hole">
+            <img src="./assets/Hole.png" class="hole_image" alt="Trou" draggable="false"/>
+          </div>
+          <div class="hole">
+            <img src="./assets/Hole.png" class="hole_image" alt="Trou" draggable="false"/>
+          </div>
+          <div class="hole">
+            <img src="./assets/Hole.png" class="hole_image" alt="Trou" draggable="false"/>
+          </div>
+          <div class="hole">
+            <img src="./assets/Hole.png" class="hole_image" alt="Trou" draggable="false"/>
+          </div>
+          <div class="hole">
+            <img src="./assets/Hole.png" class="hole_image" alt="Trou" draggable="false"/>
+          </div>
+          <div class="hole">
+            <img src="./assets/Hole.png" class="hole_image" alt="Trou" draggable="false"/>
+          </div>
+          <div class="hole">
+            <img src="./assets/Hole.png" class="hole_image" alt="Trou" draggable="false"/>
+          </div>
+          <div class="hole">
+            <img src="./assets/Hole.png" class="hole_image" alt="Trou" draggable="false"/>
+          </div>
+        </div>
+      </div>
+      <div class="info_wrapper">
+        <p>Chronomètre : <span id="timer">0</span> s</p>
+        <p>Score : <span id="score">0</span></p>
+      </div>
     </div>
-</div>
-<script src="js/script.js"></script>
-</body>
-
+    <script src="js/script.js"></script>
+    <script src="js/game.js"></script>
+  </body>
 </html>
