@@ -12,6 +12,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+function preloadImages() {
+    var imageUrls = [
+        "./assets/Leaderboard.png",
+        "./assets/Box.png",
+        "./assets/oak.webp",
+        "./assets/Hole.png",
+        "./assets/Taupiqueur.png",
+        "./assets/Triopikeur.png"
+    ];
+
+    imageUrls.forEach(function (url) {
+        var img = new Image();
+        img.src = url;
+    });
+}
+
 function startGame() {
     var homeWrapper = document.getElementById('home');
     var gameWrapper = document.getElementById('game');
