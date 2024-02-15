@@ -107,7 +107,7 @@ function startTimer() {
     var timerInterval = setInterval(function () {
         timer++;
         timerElement.textContent = timer;
-        if (timer >= 30) {
+        if (timer >= 300) {
             clearInterval(timerInterval);
             endGame();
         }

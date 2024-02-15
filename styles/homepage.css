@@ -131,14 +131,25 @@
     cursor: url('../assets/hammer.png') 20 55, auto;
 }
 
+.game_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hole_wrapper {
     display: grid; /* Utiliser un affichage en grille pour organiser les trous */
     grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
-    grid-gap: 10px; /* Espacement entre les trous */
+    width: min-content;
 }
 
 .hole {
-    position: relative;
+    position: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px; /* Espacement entre les trous */
 }
 
 .hole_image {
@@ -147,16 +158,12 @@
 
 .taupiqueur_image {
     width: 200px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .has-taupiqueur{
-    position: relative;
-    right: 25px;
-    bottom: 6px;
+    position: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .info_wrapper{
