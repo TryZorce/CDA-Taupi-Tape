@@ -13,6 +13,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function startGame() {
+    var playerNameInput = document.getElementById('name');
+    var playerName = playerNameInput.value.trim();
+    if (playerName === '') {
+        alert('Veuillez entrer un pseudo pour commencer le jeu.');
+        return;
+    }
+
     var homeWrapper = document.getElementById('home');
     var gameWrapper = document.getElementById('game');
 
@@ -68,7 +75,7 @@ function generateTaupiqueurs() {
         var randomHole = holes[randomHoleIndex];
 
         if (!randomHole.classList.contains('has-taupiqueur')) {
-            var isTriopikeur = Math.random() < 0.2; // 20% de chance d'apparition de Triopikeur
+            var isTriopikeur = Math.random() < 0.2;
 
             var taupiqueurHTML;
             if (isTriopikeur && difficulty === 'Roucarnage') {
@@ -102,19 +109,19 @@ function generateTaupiqueurs() {
 
 
 function startTimer() {
-    var timer = 30; // Initialiser le compte à rebours à 30 secondes
+    var timer = 30;
     var timerElement = document.getElementById('timer');
-    timerElement.textContent = timer; // Afficher le temps initial
+    timerElement.textContent = timer;
 
     var timerInterval = setInterval(function () {
-        timer--; // Décrémenter le temps
-        timerElement.textContent = timer; // Mettre à jour l'affichage du temps
+        timer--; 
+        timerElement.textContent = timer; 
 
         if (timer <= 0) {
-            clearInterval(timerInterval); // Arrêter le compte à rebours lorsque le temps est écoulé
-            endGame(); // Appeler endGame() lorsque le temps est écoulé
+            clearInterval(timerInterval); 
+            endGame();
         }
-    }, 1000); // Mettre à jour le compte à rebours chaque seconde
+    }, 1000);
 }
 
 function endGame() {
@@ -157,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     var leaderboardLink = document.getElementById('leaderboardLink');
     leaderboardLink.addEventListener('click', function(event) {
-        event.preventDefault(); // Empêche le lien de naviguer vers une autre page
+        event.preventDefault();
 
         ShowLeaderboard();
     });
@@ -196,12 +203,11 @@ function ShowLeaderboard() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Sélection de l'élément select de la difficulté dans la pop-up
+   
     var difficultySelectPopup = document.getElementById('difficultySelectPopup');
     
-    // Ajout d'un événement "change" à l'élément select
     difficultySelectPopup.addEventListener('change', function() {
-        // Appel de la fonction ShowLeaderboard pour mettre à jour le classement
+       
         ShowLeaderboard();
     });
 });
