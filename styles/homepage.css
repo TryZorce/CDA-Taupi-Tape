@@ -1,4 +1,4 @@
-#home{
+#home {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,7 +110,7 @@
     cursor: pointer;
 }
 
-.difficulty{
+.difficulty {
     font-size: large;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -131,15 +131,17 @@
     cursor: url('../assets/hammer.png') 20 55, auto;
 }
 
-.game_wrapper{
+.game_wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .hole_wrapper {
-    display: grid; /* Utiliser un affichage en grille pour organiser les trous */
-    grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
+    display: grid;
+    /* Utiliser un affichage en grille pour organiser les trous */
+    grid-template-columns: repeat(3, 1fr);
+    /* Trois colonnes */
     width: min-content;
 }
 
@@ -149,7 +151,8 @@
     align-items: center;
     margin-top: 20px;
     margin-left: 40px;
-    margin-right: 40px; /* Espacement entre les trous */
+    margin-right: 40px;
+    /* Espacement entre les trous */
 }
 
 .hole_image {
@@ -160,13 +163,13 @@
     width: 200px;
 }
 
-.has-taupiqueur{
+.has-taupiqueur {
     position: flex;
     justify-content: center;
     align-items: center;
 }
 
-.info_wrapper{
+.info_wrapper {
     display: flex;
     width: 100vw;
     height: 150px;
@@ -217,4 +220,34 @@
     color: #333;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+    .input_box {
+        margin: unset;
+    }
+
+    .wrapper_oak {
+        display: none;
+    }
+
+    .hole {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .hole_image {
+        width: 50px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .has-taupiqueur{
+        width: 50px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
