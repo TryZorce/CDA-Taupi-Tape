@@ -102,16 +102,19 @@ function generateTaupiqueurs() {
 
 
 function startTimer() {
-    var timer = 0;
+    var timer = 30; // Initialiser le compte à rebours à 30 secondes
     var timerElement = document.getElementById('timer');
+    timerElement.textContent = timer; // Afficher le temps initial
+
     var timerInterval = setInterval(function () {
-        timer++;
-        timerElement.textContent = timer;
-        if (timer >= 30) {
-            clearInterval(timerInterval);
-            endGame();
+        timer--; // Décrémenter le temps
+        timerElement.textContent = timer; // Mettre à jour l'affichage du temps
+
+        if (timer <= 0) {
+            clearInterval(timerInterval); // Arrêter le compte à rebours lorsque le temps est écoulé
+            endGame(); // Appeler endGame() lorsque le temps est écoulé
         }
-    }, 1000);
+    }, 1000); // Mettre à jour le compte à rebours chaque seconde
 }
 
 function endGame() {

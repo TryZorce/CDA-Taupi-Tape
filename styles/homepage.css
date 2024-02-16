@@ -124,8 +124,9 @@
     align-items: center;
     background-image: url(../assets/Background_Game.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
+    background-size: 250%;
     width: 100%;
     height: 100vh;
     cursor: url('../assets/hammer.png') 20 55, auto;
