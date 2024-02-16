@@ -172,7 +172,7 @@
 .info_wrapper {
     display: flex;
     width: 100vw;
-    height: 150px;
+    height: 100px;
 
     justify-content: space-around;
     align-items: end;
