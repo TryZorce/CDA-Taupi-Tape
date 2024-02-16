@@ -232,22 +232,30 @@
     }
 
     .hole {
-        margin-top: 10px;
+        margin-top: 20px;
+        margin-bottom: 40px;
         margin-left: 10px;
         margin-right: 10px;
     }
 
     .hole_image {
-        width: 50px;
+        width: 75px;
         margin-top: 10px;
+        margin-bottom: 40px;
         margin-left: 10px;
         margin-right: 10px;
     }
 
     .has-taupiqueur{
-        width: 50px;
+        width: 75px;
         margin-top: 10px;
+        margin-bottom: 40px;
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    .taupiqueur_image{
+
+        width: 75px;
     }
 }
