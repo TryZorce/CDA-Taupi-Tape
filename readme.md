@@ -61,9 +61,7 @@ J'ai décidé de réaliser un projet HTML/CSS/JS. J'ai commencé par analyser la
 Une maquette sur laquelle j'ai organiser mon futur site [Figma](https://www.figma.com/file/dSw9IXM34VsiIxuqTyPYNw/Untitled?type=design&node-id=0%3A1&mode=design&t=tyX8pYccxOMkTicn-1)J'ai également créé un dépôt [Github](https://github.com/TryZorce/CDA-Taupi-Tape) pour partager mon code.
 
 # Salut, Je suis Christopher ! 👋
-
-![Logo](
-https://media.licdn.com/dms/image/C4E03AQGbRVcmls4Y1Q/profile-displayphoto-shrink_200_200/0/1615815347656?e=1712188800&v=beta&t=nZDFtN8p9P2S0w6OPWaCmFE7dZZmYHkuagCXHzo_0aE)
+![Logo](https://i.ibb.co/r6BjgG6/Photo-Simplon.jpg)
 
 
 ## 🚀 About Me
